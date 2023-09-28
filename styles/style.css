@@ -13,7 +13,7 @@ a {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #727A9A, #D8DBE9);
-    padding: 10px;
+    padding: 1%;
 }
 
 .card {
@@ -21,6 +21,11 @@ a {
     height: 515px;
     margin: 100px auto 0;
     perspective: 1000px;
+
+    @media (max-width: 375px) {
+        width: 300px;
+        margin: 100px 2% 0 2%;
+    }
 }
 
 .card-inner {
@@ -60,6 +65,7 @@ a {
 .front p {
     color: #ccc;
     font-size: 18px;
+
 }
 
 .front button {
@@ -86,19 +92,35 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 400;
+
+    @media (max-width: 375px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
 }
 
 .back p {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 10px;
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .back .projects a {
     text-decoration: underline;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .back .projects img {
@@ -114,7 +136,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-padding-top: 10px;
+    padding-top: 10px;
 }
 
 .social-icon-github img,
