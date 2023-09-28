@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #727A9A, #D8DBE9);
+    padding: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 515px;
+    margin: 100px auto 0;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: linear-gradient(135deg, #E4E7E4, #0A1647);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.front h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.front p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.back {
+    background: #fff;
+    color: #000;
+    padding: 20px 30px;
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.back p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.back .projects a {
+    text-decoration: underline;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.back .projects img {
+    width: 20px;
+    padding-left: 5px;
+}
+
+.back .header-img {
+    width: 60px;
+}
+
+.back .social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+padding-top: 10px;
+}
+
+.social-icon-github img,
+.social-icon-linkedin img,
+.social-icon-telegram img {
+    width: 40px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
