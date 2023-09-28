@@ -131,7 +131,7 @@ a {
 @media screen and (max-width: 375px) {
     .card {
         width: 300px;
-        /* margin: 100px 2% 0 2%; */
+        margin-top: 10%;
     }
 
     .back h1 {
