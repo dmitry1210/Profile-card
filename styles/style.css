@@ -18,7 +18,7 @@ a {
 
 .card {
     width: 350px;
-    height: 515px;
+    height: 550px;
     margin: 100px auto 0;
     perspective: 1000px;
 }
@@ -148,4 +148,9 @@ a {
         font-size: 15px;
         line-height: 18px;
     }
+
+    .back .social-links ul {
+        padding-top: 20px;
+    }
+
 }
