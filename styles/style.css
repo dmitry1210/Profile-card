@@ -77,7 +77,7 @@ a {
 .back {
     background: #fff;
     color: #000;
-    padding: 20px 30px;
+    padding: 20px 25px;
     transform: rotateY(180deg);
 }
 
@@ -124,6 +124,10 @@ a {
 .social-icon-linkedin img,
 .social-icon-telegram img {
     width: 40px;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .card:hover .card-inner {
